@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/txtName"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Имя"
+       android:inputType="textPersonName"
+       android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/txtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:hint="Номер телефона"
+        android:inputType="number"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNumber"
+        android:hint="Дата рождения"
+        android:inputType="number"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDate"
+        android:layout_marginTop="30dp"
+        android:text="Добавить данные"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInsert"
+        android:layout_marginTop="30dp"
+        android:text="Просмотр всех данных"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
